@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(182, 187, 194);
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+
+    a:any-link, div {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: grey;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    &-color {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 75%;
+        height: 50vh;
+        font-size: 1.25rem;
+        border: 1px black solid;
+        padding: 4rem;
+        background-color: rgb(199, 209, 224);
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                min-width: 200px;
+            }
+            input {
+                width: 100%;
+                border: 1px black solid;
+                font-size: 1.25rem;
+            }
+        }
+        button {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+
+    }
+}
+
+.error-msg {
+    color: red;
+    font-size: 1rem;
+    text-align: right;
+    position: relative;
+    bottom: 1.5rem;
+    
+}
+
+.colour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 75vh;
+    font-size: 1.25rem;
+    font-weight: bold;
+    &-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}

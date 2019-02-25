@@ -1,33 +1,156 @@
+* {
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #b6bbc2;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.navbar a:-webkit-any-link, .navbar div {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a:-moz-any-link, .navbar div {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a:any-link, .navbar div {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.form-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 75%;
+  height: 50vh;
+  font-size: 1.25rem;
+  border: 1px black solid;
+  padding: 4rem;
+  background-color: #c7d1e0;
+}
+
+.form-color label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-color label div {
+  min-width: 200px;
+}
+
+.form-color label input {
+  width: 100%;
+  border: 1px black solid;
+  font-size: 1.25rem;
+}
+
+.form-color button {
+  background-color: black;
   color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.error-msg {
+  color: red;
+  font-size: 1rem;
+  text-align: right;
+  position: relative;
+  bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 75vh;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
+
+.colour-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=App.css.map */
