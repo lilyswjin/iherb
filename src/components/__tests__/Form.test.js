@@ -53,7 +53,7 @@ describe("<Form /> component", () => {
     })
 })
 
-describe("input fields", () => {
+describe("email input fields", () => {
     beforeEach(() => {
         wrapper = mount(
             <Router initialEntries={[ '/form']}>
@@ -83,13 +83,12 @@ describe("input fields", () => {
     })
     
     it('clears the form and error messages when the form is submitted', () => {
-        wrapper.find("form#form-color").simulate('submit', {
-            target: {
-            }
-        })
+       
+        wrapper.find("form#form-color").simulate('submit')
 
         expect(wrapper.find('input#form-email').props().value).toEqual("");
 
     })
 })    
 
+// tests would be repeated with phone# and color fields
