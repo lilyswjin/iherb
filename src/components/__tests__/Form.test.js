@@ -68,7 +68,7 @@ describe("email input fields", () => {
 
     it('should render a textbox that accepts user input', () => {
         wrapper.find("input#form-email").simulate("change", {
-            target: {value: "email"}
+            target: {value: "email", name: "email"}
         })
     
         expect(wrapper.find("input#form-email").prop('value')).toEqual("email");
