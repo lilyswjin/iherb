@@ -76,7 +76,7 @@ describe("email input fields", () => {
     
     it('should render an error message if an invalid email is entered', () => {
         wrapper.find("input#form-email").simulate("change", {
-            target: {value: "email"}
+            target: {value: "email", name: "email"}
         })
 
         expect(wrapper.find("div.error-msg").at(0).innerHTML).not.toEqual("");
